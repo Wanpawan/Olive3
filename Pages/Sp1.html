@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Itim&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+
+  <body>
+    
+  
+   <header>
+         <nav class="navbar navbar-expand-lg Bgmenu">
+  <div class="logo ibm-plex-sans-thai-bold">Olive</div>
+        <!-- <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div> -->
+  <div class="container-fluid ">
+    <a class="navbar-brand itim-regular" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse cfont" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link " href="../Index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="Product.html">Our Products</a>
+        </li>
+       
+        <li class="nav-item">
+           <a class="nav-link " href="Profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link" href="Bag.html">Shopping Bag</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+               <div style="display: flex; gap: 1rem; align-items: center;">
+           
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+           
+            <i class="fa-solid fa-basket-shopping cart-icon"></i>
+           
+        </div>
+       
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="product-layout">
+            <!-- Product Images -->
+            <div class="product-images">
+                <div class="thumbnail-list">
+                    <img src="../Image/lin2.png" 
+                         alt="Thumbnail 1" 
+                         class="thumbnail active"
+                         onclick="changeMainImage(this.src)">
+                    <img src="../Image/lin3.png" 
+                         alt="Thumbnail 2" 
+                         class="thumbnail"
+                         onclick="changeMainImage(this.src)">
+                    <img src="../Image/lin4.png" 
+                         alt="Thumbnail 3" 
+                         class="thumbnail"
+                         onclick="changeMainImage(this.src)">
+                </div>
+
+                <div class="main-image-container">
+                    <img id="mainImage" 
+                         src="../Image/Lin1.png" 
+                         alt="สินบังกร" 
+                         class="main-image">
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <div class="product-header">
+                    <div>
+                        <h1>ต้นยางอินเดีย</h1>
+                        <p class="price">350 ฿</p>
+                    </div>
+                    <button class="wishlist-btn" onclick="toggleWishlist(this)">♡</button>
+                </div>
+
+                <div class="quantity-selector">
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                        <span class="quantity-value" id="quantity">1</span>
+                        <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                    </div>
+                </div>
+
+                <div class="overview-section">
+                    <h3>Overview</h3>
+                    <p>
+                        เนื่องจาต้นอานเมนเรียมทำไม่กสาต้นอาแสมเมรียมทำใช้าไม่สูลทน้นานนทคไม่กใช้สูานทน้นนทคพี่เอนกสาต้นแสมเมเรียมาานเมนดีทนทดีมีีเอนกสสาต้นน้นอาแสมเมเรียทำใช้าไม่สูดหาไม่กสาต้นนอาใช้าแสมเมเรียมทำใช้าไม่สูดหาไม่ใสูดหนานทคพไร์เอนกสาต้นอนอาแสมเมนเรียมทำใช้าไม่สูดหานทคไม่กใช้สูานทน้นนทำพี่ไม่ใสูดหานานทคไม่กใช้าไม่สูดหนานทคไม่กใช้าไม่สูดหาเนานทคพี่
+                    </p>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn-add-bag">Add To Bag</button>
+                    <button class="btn-buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <section class="contact-section">
+        <h2>CONTACT</h2>
+        <div class="contact-info">
+            <i class="fa-solid fa-phone"> 062-359-2356 </i>
+            <i class="fa-solid fa-envelope-open">olive.officail@gmail.com</i>
+            <i class="fa-solid fa-house">123 ถนนสุขุมวิท กรุงเทพฯ 10110</i>
+        </div>
+        <div class="social-links">
+           <i class="fa-brands fa-square-instagram"></i>
+           <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Olive Plant Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Filter buttons
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+
+        // Mobile menu
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const nav = document.querySelector('nav');
+        mobileMenu.addEventListener('click', () => {
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
